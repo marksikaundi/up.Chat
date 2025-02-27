@@ -1,5 +1,5 @@
 import AgentPulse from "@/components/AgentPulse";
-import { Book, Brain, ImageIcon, Sparkles, Video } from "lucide-react";
+import { Book, Brain, ImageIcon, Sparkles, TicketsPlane, Video } from "lucide-react";
 
 const features = [
   {
@@ -33,6 +33,14 @@ const features = [
     icon: Video,
     iconBg: "bg-red-100",
     iconColor: "text-red-600",
+  },
+  {
+    title: "Title Generation",
+    description:
+      "Generate catchy titles for your video content. Get suggestions based on keywords, sentiment, and more.",
+    icon: TicketsPlane,
+    iconBg: "bg-purple-100",
+    iconColor: "text-purple-600",
   },
   {
     title: "Discuss with your AI Agent",
