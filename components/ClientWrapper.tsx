@@ -1,6 +1,7 @@
 import { ClerkProvider } from "@clerk/nextjs";
-import SchematicWrapped from "./SchematicWrapped";
 import { SchematicProvider } from "@schematichq/schematic-react";
+
+import SchWrapper from "./SchWrapper";
 
 
 export default function ClientWrapper({
@@ -19,7 +20,8 @@ export default function ClientWrapper({
   return (
    <ClerkProvider>
     <SchematicProvider publishableKey={schematicPubKey}>
-     <SchematicWrapped>{children}</SchematicWrapped>
+      {children}
+      <SchWrapper>{children}</SchWrapper>
       </SchematicProvider>
    </ClerkProvider>
   );
