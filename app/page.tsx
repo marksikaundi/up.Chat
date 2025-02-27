@@ -18,11 +18,21 @@ export default function Home() {
               Transform your video content with AI powered analysis,
               transcription, and more. Get started for free.
             </p>
+            {/* Youtube Video Form */}
+
+
           </div>
         </div>
       </section>
 
       {/* Features section */}
+      <section>
+        <div>
+          <h2 className=" text-3xl font-bold text-center mb-12 " >
+            Powerfull Features for Content Creators
+          </h2>
+        </div>
+      </section>
 
       {/* How it works section */}
 
