@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import AgentPulse from "./AgentPulse";
-import { SignedIn, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
 
 function Header() {
@@ -28,11 +28,22 @@ function Header() {
                 Manage Plan
               </Button>
             </Link>
+
+            <div className="p-2 w-10 h-10 flex items-center justify-center rounded-full border bg-blue-100 border-blue-200 ">
+              <UserButton />
+            </div>
           </SignedIn>
 
-          <div className="p-2 w-10 h-10 flex items-center justify-center rounded-full border bg-blue-100 border-blue-200 ">
-            <UserButton />
-          </div>
+          <SignedOut>
+            <SignedIn>
+              <Button
+                variant="ghost"
+                className=" bg-gradient-to-r from-blue-600 to-blue-400 text-transparent bg-clip-text "
+              >
+                Sign In
+              </Button>
+            </SignedIn>
+          </SignedOut>
         </div>
       </div>
     </header>
