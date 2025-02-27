@@ -1,4 +1,5 @@
 import AgentPulse from "@/components/AgentPulse";
+import FreeSection from "@/components/FreeSection";
 import {
   Book,
   Brain,
@@ -18,14 +19,12 @@ const steps = [
   },
   {
     title: "2. AI Agent Analysis",
-    description:
-      "Your personal agent analyzes every aspect of your content",
+    description: "Your personal agent analyzes every aspect of your content",
     icon: Brain,
   },
   {
     title: "3. Transform your content",
-    description:
-      "Get actionable insights and strategic recommendations",
+    description: "Get actionable insights and strategic recommendations",
     icon: MessageSquare,
   },
 ];
@@ -159,16 +158,13 @@ export default function Home() {
                 </div>
               );
             })}
-
-
           </div>
         </div>
       </section>
 
+      <FreeSection />
+
       {/* Footer section */}
-      
-
-
     </div>
   );
 }
