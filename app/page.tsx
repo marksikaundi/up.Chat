@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div className="min-h-screen ">
       {/* Hero section */}
-      <section  className=" py-20 bg-gradient-to-b from-white to-gray-50 " >
-        <div className=" container mx-auto px-4 " >
-          <div className=" flex flex-col items-center gap-10 text-center mb-12 " >
+      <section className=" py-20 bg-gradient-to-b from-white to-gray-50 ">
+        <div className=" container mx-auto px-4 ">
+          <div className=" flex flex-col items-center gap-10 text-center mb-12 ">
             <AgentPulse size="large" color="blue" />
             <h1 className=" text-4xl md:text-6xl font-bold text-gray-900 mb-6   ">
               Meet your AI personal{" "}
@@ -19,16 +19,14 @@ export default function Home() {
               transcription, and more. Get started for free.
             </p>
             {/* Youtube Video Form */}
-
-
           </div>
         </div>
       </section>
 
       {/* Features section */}
-      <section>
-        <div>
-          <h2 className=" text-3xl font-bold text-center mb-12 " >
+      <section py-20 bg-white>
+        <div className=" container mx-auto px-4 ">
+          <h2 className=" text-3xl font-bold text-center mb-12 ">
             Powerfull Features for Content Creators
           </h2>
         </div>
