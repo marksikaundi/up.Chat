@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function FreeSection() {
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-r from-amber-50 to-yellow-100 rounded-3xl px-4 py-16 md:py-24">
+    <div className="relative w-full overflow-hidden bg-gradient-to-r from-blue-500 to-blue-100 rounded-3xl px-4 py-16 md:py-24">
       <div className="max-w-4xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full mb-8">
           <div className="bg-slate-700 text-white p-1 rounded">
@@ -24,13 +24,13 @@ export default function FreeSection() {
               <path d="M17 17h.01" />
             </svg>
           </div>
-          <span className="text-sm font-medium text-slate-800">Automate with AI</span>
+          <span className="text-sm font-medium text-slate-800">Automate with up.Chat</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6">Start for free today.</h1>
 
         <p className="text-lg md:text-xl text-slate-700 mb-10 max-w-2xl mx-auto">
-          Build AI agents in minutes to automate workflows, save time, and grow your business.
+            Get started with up.Chat for free and enjoy 400 free credits and 400 free tasks. No credit card
         </p>
 
         <div className="flex flex-wrap justify-center gap-8 mb-10">
