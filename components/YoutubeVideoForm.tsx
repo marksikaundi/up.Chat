@@ -1,4 +1,3 @@
-"ise client"
 import React from 'react'
 import Form from "next/form"
 
