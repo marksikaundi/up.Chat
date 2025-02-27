@@ -3,10 +3,32 @@ import {
   Book,
   Brain,
   ImageIcon,
+  MessageSquare,
   Sparkles,
   TicketsPlane,
   Video,
 } from "lucide-react";
+
+const steps = [
+  {
+    title: "1. Connect your video",
+    description:
+      "Connect your video content from Youtube, Vimeo, or upload directly.",
+    icon: Video,
+  },
+  {
+    title: "2. AI Agent Analysis",
+    description:
+      "Your personal agent analyzes every aspect of your content",
+    icon: Brain,
+  },
+  {
+    title: "3. Transform your content",
+    description:
+      "Get actionable insights and strategic recommendations",
+    icon: MessageSquare,
+  },
+];
 
 const features = [
   {
@@ -88,32 +110,60 @@ export default function Home() {
           <h2 className=" text-3xl font-bold text-center mb-12 ">
             Powerfull Features for Content Creators
           </h2>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
-          {/* Feature cards */}
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <div
-                key={index}
-                className=" bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300 "
-              >
-                <div
-                  className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.iconBg} `}
-                >
-                  <Icon className={` w-6 h-6 ${feature.iconColor} `} />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 ">{feature.title}</h3>
 
-                <p className="text-gray-600">{feature.description}</p>
-              </div>
-            );
-          })}
-        </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+            {/* Feature cards */}
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <div
+                  key={index}
+                  className=" bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300 "
+                >
+                  <div
+                    className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.iconBg} `}
+                  >
+                    <Icon className={` w-6 h-6 ${feature.iconColor} `} />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 ">
+                    {feature.title}
+                  </h3>
+
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
       {/* How it works section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-12 ">
+            Meet your AI Agent in 3 Simple Steps
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8 ">
+            {steps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300 "
+                >
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 ">
+                    <Icon className="w-6 h-6 text-blue-600 " />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2 ">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
+                </div>
+              );
+            })}
+
+
+          </div>
+        </div>
+      </section>
 
       {/* Footer section */}
     </div>
