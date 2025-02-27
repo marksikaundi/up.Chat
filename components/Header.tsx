@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
+import AgentPulse from './AgentPulse'
 
 function Header() {
   return (
@@ -8,7 +9,9 @@ function Header() {
       <div>
         <div>
             <div>
-                <Link href='/'><h1>up.Chat</h1>
+                <Link href='/'>
+                <AgentPulse size='medium' color='blue' />
+                <h1>up.Chat</h1>
                 </Link>
             </div>
 
