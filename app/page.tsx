@@ -76,8 +76,8 @@ export default function Home() {
       </section>
 
       {/* Features section */}
-      <section className="py-20 bg-white">
-        <div className=" container mx-auto px-4 ">
+      <section className="py-20 bg-white max-w-6xl">
+        <div className=" container mx-auto px-4  ">
           <h2 className=" text-3xl font-bold text-center mb-12 ">
             Powerfull Features for Content Creators
           </h2>
