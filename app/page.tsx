@@ -1,5 +1,5 @@
 import AgentPulse from "@/components/AgentPulse";
-import { Brain, ImageIcon, MessageSquare, Sparkles, Video } from "lucide-react";
+import { Book, Brain, ImageIcon, Sparkles, Video } from "lucide-react";
 
 const features = [
   {
@@ -14,7 +14,7 @@ const features = [
     title: "Smart Transcription ",
     description:
       "Automatically transcribe your video content with high accuracy. Download in multiple formats.",
-    icon: MessageSquare,
+    icon: Book,
     iconBg: "bg-blue-100",
     iconColor: "text-blue-600",
   },
