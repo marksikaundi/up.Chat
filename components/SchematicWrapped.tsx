@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useSchematicEvents } from "@schematichq/schematic-react";
 
 
-const SchWrapper = ({ children }: { children: React.ReactNode }) => {
+const SchematicWrapped = ({ children }: { children: React.ReactNode }) => {
   const { identify } = useSchematicEvents();
   const { user } = useUser();
 
@@ -43,4 +43,4 @@ const SchWrapper = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default SchWrapper;
+export default SchematicWrapped;
