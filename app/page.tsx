@@ -1,5 +1,6 @@
 import AgentPulse from "@/components/AgentPulse";
 import FreeSection from "@/components/FreeSection";
+import YoutubeVideoForm from "@/components/YoutubeVideoForm";
 import {
   Book,
   Brain,
@@ -99,6 +100,7 @@ export default function Home() {
               transcription, and more. Get started for free.
             </p>
             {/* Youtube Video Form */}
+            <YoutubeVideoForm />
           </div>
         </div>
       </section>
