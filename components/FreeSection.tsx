@@ -62,15 +62,15 @@ export default function FreeSection() {
                 <path d="M18 12h-2" />
               </svg>
             </div>
-            <span className="text-slate-700 font-medium">400 free tasks</span>
+            <span className="text-slate-700 font-medium">For free 7days</span>
           </div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4">
-          <button className="px-6 py-3 rounded-lg bg-white text-slate-700 font-medium hover:bg-slate-50 transition-colors">
+          <button className="px-6 py-3 cursor-pointer rounded-lg bg-white text-slate-700 font-medium hover:bg-slate-50 transition-colors">
             Get in touch
           </button>
-          <button className="px-6 py-3 rounded-lg bg-blue-600 text-white font-medium flex items-center gap-2 hover:bg-blue-700 transition-colors">
+          <button className="px-6 py-3 cursor-pointer  rounded-lg bg-blue-600 text-white font-medium flex items-center gap-2 hover:bg-blue-700 transition-colors">
             Try for free
             <ArrowRight className="w-4 h-4" />
           </button>
