@@ -2,7 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import AgentPulse from "./AgentPulse";
-import { SignedIn } from "@clerk/nextjs";
+import { SignedIn, UserButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
 
 function Header() {
@@ -21,11 +21,13 @@ function Header() {
         <div>
           <SignedIn>
             <Link href="/manage-plan">
-              <Button>
-                <span>Manage Plan</span>
-              </Button>
+              <Button>Manage Plan</Button>
             </Link>
           </SignedIn>
+
+          <div className="p-2 w-10 h-10 flex items-center justify-center rounded-full border bg-blue-100 border-blue-200 ">
+            <UserButton />
+          </div>
         </div>
       </div>
     </header>
