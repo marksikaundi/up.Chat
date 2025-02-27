@@ -1,3 +1,4 @@
+"ise client"
 import React from 'react'
 import Form from "next/form"
 
@@ -6,10 +7,11 @@ function YoutubeVideoForm() {
     <div>
       <Form
       action={() => {}}
+      className=" flex flex-col sm:flex-row gap-2 items-center "
       />
 
-      <input type="text" placeholder="Enter Youtube Video URL" className=" flex flex-col sm:flex-row gap-2 items-center " />
-      <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-all duration-300 ">
+      <input type="text" placeholder="Enter Youtube Video URL" className="  " />
+      <button className=" ">
         Analyze Video
         </button>
     </div>
