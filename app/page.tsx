@@ -149,10 +149,10 @@ export default function Home() {
               return (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300 "
+                  className="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-lg transition-all "
                 >
-                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-blue-100 ">
-                    <Icon className="w-6 h-6 text-blue-600 " />
+                  <div className="w-16 h-16 rounded-full flex items-center bg-gradient-t0-r from-blue-600 justify-center mb-4 mx-auto ">
+                    <Icon className="w-8 h-8 text-white " />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 ">{step.title}</h3>
                   <p className="text-gray-600">{step.description}</p>
