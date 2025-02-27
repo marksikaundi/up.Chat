@@ -151,7 +151,7 @@ export default function Home() {
                   key={index}
                   className="bg-white p-6 rounded-xl text-center shadow-md hover:shadow-lg transition-all "
                 >
-                  <div className="w-16 h-16 rounded-full flex items-center bg-gradient-t0-r from-blue-600 justify-center mb-4 mx-auto ">
+                  <div className="w-16 h-16 rounded-full flex items-center bg-gradient-to-r from-blue-600 justify-center mb-4 mx-auto ">
                     <Icon className="w-8 h-8 text-white " />
                   </div>
                   <h3 className="text-xl font-semibold mb-2 ">{step.title}</h3>
