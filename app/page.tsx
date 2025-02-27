@@ -82,7 +82,13 @@ export default function Home() {
                 <div>
                   <Icon size={48} className={`mx-auto ${feature.iconBg} ${feature.iconColor} `} />
                 </div>
-                <h3></h3>
+                <h3>
+                  {feature.title}
+                </h3>
+
+                <p>
+                  {feature.description}
+                </p>
               </div>
             )
 
