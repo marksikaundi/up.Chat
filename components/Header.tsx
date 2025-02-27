@@ -9,7 +9,7 @@ function Header() {
       <div>
         <div>
           <div>
-            <Link className="flex items-center  " href="/">
+            <Link className="flex items-center gap-4 " href="/">
               <AgentPulse size="small" color="blue" />
               <h1>up.Chat</h1>
             </Link>
