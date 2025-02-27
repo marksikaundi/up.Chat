@@ -35,7 +35,11 @@ const SchematicWrapped = ({ children }: { children: React.ReactNode }) => {
     }
   }, [user, identify]);
 
-  return { children };
+  return (
+    <>
+      {children}
+    </>
+  );
 };
 
 export default SchematicWrapped;
