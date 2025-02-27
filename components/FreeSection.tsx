@@ -24,7 +24,7 @@ export default function FreeSection() {
               <path d="M17 17h.01" />
             </svg>
           </div>
-          <span className="text-sm font-medium text-slate-800">Automate with up.Chat</span>
+          <span className="text-sm font-medium text-slate-800">Generate with up.Chat</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6">Start for free today.</h1>
