@@ -76,6 +76,10 @@ export default function FreeSection() {
           </button>
         </div>
       </div>
+      <div>
+        <h3>        2025 up.Chat. All rights reserved.
+        </h3>
+      </div>
     </div>
   )
 }
