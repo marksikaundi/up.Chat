@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function FreeSection() {
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-r from-blue-500 to-blue-100 rounded-3xl px-4 py-16 md:py-24">
+    <div className="relative w-full overflow-hidden bg-gradient-to-r from-blue-500 to-blue-100  px-4 py-16 md:py-24">
       <div className="max-w-4xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-3 py-1.5 rounded-full mb-8">
           <div className="bg-slate-700 text-white p-1 rounded">
