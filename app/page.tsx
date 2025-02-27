@@ -7,8 +7,8 @@ const features = [
     description:
       "Get detailed analysis of your video content including sentiment analysis, keyword extraction, and more.",
     icon: Brain,
-    iconBg: "bg-blue-100",
-    iconColor: "text-blue-600",
+    iconBg: "bg-green-100",
+    iconColor: "text-green-600",
   },
   {
     title: "Smart Transcription ",
@@ -23,8 +23,8 @@ const features = [
     description:
       "Generate beautiful thumbnails for your video content. Customize with text, colors, and more.",
     icon: ImageIcon,
-    iconBg: "bg-blue-100",
-    iconColor: "text-blue-600",
+    iconBg: "bg-yellow-100",
+    iconColor: "text-yellow-600",
   },
   {
     title: "Create video clips",
@@ -74,24 +74,25 @@ export default function Home() {
             Powerfull Features for Content Creators
           </h2>
         </div>
-        <div>{/* Feature cards */}
+        <div>
+          {/* Feature cards */}
           {features.map((feature, index) => {
             const Icon = feature.icon;
             return (
-              <div key={index} className=" bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300 " >
-                <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.iconBg} `}  >
-                  <Icon  />
+              <div
+                key={index}
+                className=" bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300 "
+              >
+                <div
+                  className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${feature.iconBg} `}
+                >
+                  <Icon className={` w-6 h-6 ${feature.iconColor} `} />
                 </div>
-                <h3>
-                  {feature.title}
-                </h3>
+                <h3>{feature.title}</h3>
 
-                <p>
-                  {feature.description}
-                </p>
+                <p>{feature.description}</p>
               </div>
-            )
-
+            );
           })}
         </div>
       </section>
