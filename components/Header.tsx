@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import AgentPulse from "./AgentPulse";
 import { SignedIn } from "@clerk/nextjs";
+import { Button } from "./ui/button";
 
 function Header() {
   return (
@@ -19,7 +20,11 @@ function Header() {
 
         <div>
           <SignedIn>
-            <Link href="/manage-plan">Manage Plan</Link>
+            <Link href="/manage-plan">
+              <Button>
+                <span>Manage Plan</span>
+              </Button>
+            </Link>
           </SignedIn>
         </div>
       </div>
