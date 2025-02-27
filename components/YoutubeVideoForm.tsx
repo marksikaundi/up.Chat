@@ -9,7 +9,7 @@ function YoutubeVideoForm() {
       className=" flex flex-col sm:flex-row gap-2 items-center "
       />
 
-      <input type="text" placeholder="Enter Youtube Video URL" className="  " />
+      <input name="url" type="text" placeholder="Enter Youtube URL" className="  " />
       <button className=" ">
         Analyze Video
         </button>
