@@ -80,7 +80,7 @@ export default function Home() {
             return (
               <div key={index} className=" bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition-all duration-300 " >
                 <div>
-                  <Icon size={48} className={`mx-auto ${feature.iconBg} ${feature.iconColor} `} />
+                  <Icon  />
                 </div>
                 <h3>
                   {feature.title}
