@@ -30,7 +30,7 @@ export default function FreeSection() {
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6">Start for free today.</h1>
 
         <p className="text-lg md:text-xl text-slate-700 mb-10 max-w-2xl mx-auto">
-            Get started with up.Chat for free and enjoy 400 free credits and 400 free tasks. No credit card
+            Get started with up.Chat for free and enjoy 400 free credits and free generating. No credit card
         </p>
 
         <div className="flex flex-wrap justify-center gap-8 mb-10">
