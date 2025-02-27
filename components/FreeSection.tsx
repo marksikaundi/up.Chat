@@ -77,7 +77,7 @@ export default function FreeSection() {
         </div>
       </div>
       <div>
-        <h3 className=" text-md font-sm text-center mb-2 ">        2025 up.Chat. All rights reserved.
+        <h3 className=" text-md font-sm text-center mb-2 ">   {new Date().toLocaleDateString()} up.Chat. All rights reserved.
         </h3>
       </div>
     </div>
