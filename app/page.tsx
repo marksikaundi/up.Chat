@@ -74,7 +74,7 @@ export default function Home() {
             Powerfull Features for Content Creators
           </h2>
         </div>
-        <div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 " >
           {/* Feature cards */}
           {features.map((feature, index) => {
             const Icon = feature.icon;
