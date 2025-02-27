@@ -2,6 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import AgentPulse from "./AgentPulse";
+import { SignedIn } from "@clerk/nextjs";
 
 function Header() {
   return (
@@ -14,6 +15,12 @@ function Header() {
               up.Chat
             </h1>
           </Link>
+        </div>
+
+        <div>
+          <SignedIn>
+            <Link href="/manage-plan">Manage Plan</Link>
+          </SignedIn>
         </div>
       </div>
     </header>
