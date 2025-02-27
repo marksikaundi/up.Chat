@@ -1,7 +1,6 @@
 import { ClerkProvider } from "@clerk/nextjs";
-import { SchematicProvider } from "@schematichq/schematic-react";
 import SchematicWrapped from "./SchematicWrapped";
-
+import { SchematicProvider } from "@schematichq/schematic-react";
 
 
 export default function ClientWrapper({
