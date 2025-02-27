@@ -1,5 +1,12 @@
 import AgentPulse from "@/components/AgentPulse";
-import { Book, Brain, ImageIcon, Sparkles, TicketsPlane, Video } from "lucide-react";
+import {
+  Book,
+  Brain,
+  ImageIcon,
+  Sparkles,
+  TicketsPlane,
+  Video,
+} from "lucide-react";
 
 const features = [
   {
@@ -76,13 +83,13 @@ export default function Home() {
       </section>
 
       {/* Features section */}
-      <section className="py-20 bg-white max-w-6xl">
+      <section className="py-20 bg-white">
         <div className=" container mx-auto px-4  ">
           <h2 className=" text-3xl font-bold text-center mb-12 ">
             Powerfull Features for Content Creators
           </h2>
-        </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 " >
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {/* Feature cards */}
           {features.map((feature, index) => {
             const Icon = feature.icon;
@@ -98,10 +105,11 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2 ">{feature.title}</h3>
 
-                <p className="text-gray-600" >{feature.description}</p>
+                <p className="text-gray-600">{feature.description}</p>
               </div>
             );
           })}
+        </div>
         </div>
       </section>
 
